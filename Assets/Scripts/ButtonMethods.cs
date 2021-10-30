@@ -11,8 +11,13 @@ public class ButtonMethods : MonoBehaviour
     public GameObject poemPiece;
     private CanvasGroup canvasGroup;
 
-    public int currentScene;
+    public int currentScene = 1;
     public int totalScenes;
+
+    public void Start()
+    {
+        currentScene = 1;
+    }
 
     public void ItemClick()
     {
@@ -24,14 +29,11 @@ public class ButtonMethods : MonoBehaviour
         }
     }
 
-    public void NoteClick()
+    public void JournalClick()
     {
-        if (poemPiece.activeSelf == true)
-        {
-            poemPiece.SetActive(false);
-            canvasGroup = gameObject.GetComponentInParent<CanvasGroup>();
-            canvasGroup.interactable = true;
-        }
+        Debug.Log("Read Journal " + currentScene);
+        Fungus.Flowchart.BroadcastFungusMessage("Read Journal " + currentScene);
+
     }
 
     public void TurnPage()
