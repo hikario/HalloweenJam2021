@@ -774,6 +774,8 @@ GameObject:
   - component: {fileID: 65893658}
   - component: {fileID: 65893657}
   - component: {fileID: 65893660}
+  - component: {fileID: 65893662}
+  - component: {fileID: 65893661}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -848,7 +850,7 @@ MonoBehaviour:
   scrollPos: {x: 3050.5608, y: 708.8596}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 280
   zoom: 0.6505
   scrollViewRect:
     serializedVersion: 2
@@ -856,8 +858,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 65893416}
+  selectedCommands:
+  - {fileID: 65893661}
   variables: []
   description: 
   stepPause: 0
@@ -2725,12 +2729,14 @@ MonoBehaviour:
   - {fileID: 65893608}
   - {fileID: 65893402}
   - {fileID: 65893405}
+  - {fileID: 65893662}
   - {fileID: 65893406}
   - {fileID: 65893407}
   - {fileID: 65893408}
   - {fileID: 65893620}
   - {fileID: 65893401}
   - {fileID: 65893400}
+  - {fileID: 65893661}
   - {fileID: 65893525}
   - {fileID: 65893595}
   - {fileID: 65893647}
@@ -2953,7 +2959,7 @@ MonoBehaviour:
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
-  extendPrevious: 1
+  extendPrevious: 0
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
@@ -2973,14 +2979,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 468
   indentLevel: 0
-  storyText: "I\u2019ve helped you stay on track with school. "
+  storyText: "I\u2019ve helped you stay on track with school."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
-  extendPrevious: 1
+  extendPrevious: 0
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
@@ -3102,7 +3108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 464
   indentLevel: 0
-  storyText: "I\u2019ve kept you safe. "
+  storyText: "I\u2019ve kept you safe."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8437,6 +8443,38 @@ MonoBehaviour:
   volume: 1
   fadeDuration: 0
   waitUntilFinished: 1
+--- !u!114 &65893661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65893337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 648
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 2807918fed1f03846b674abad0216f6e, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 0
+--- !u!114 &65893662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65893337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 647
+  indentLevel: 0
 --- !u!1 &73632271
 GameObject:
   m_ObjectHideFlags: 0
