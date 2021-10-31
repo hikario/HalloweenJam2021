@@ -39,6 +39,7 @@ public class ButtonMethods : MonoBehaviour
     public void TurnPage()
     {
         currentScene++;
+        Debug.Log("Current Scene is " + currentScene);
         Fungus.Flowchart.BroadcastFungusMessage("Start Scene " + currentScene);
 
         if (currentScene >= 7)
