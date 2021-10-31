@@ -588,12 +588,14 @@ GameObject:
   - component: {fileID: 65893591}
   - component: {fileID: 65893590}
   - component: {fileID: 65893555}
-  - component: {fileID: 65893405}
   - component: {fileID: 65893595}
   - component: {fileID: 65893408}
   - component: {fileID: 65893598}
   - component: {fileID: 65893597}
   - component: {fileID: 65893596}
+  - component: {fileID: 65893599}
+  - component: {fileID: 65893600}
+  - component: {fileID: 65893405}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -677,7 +679,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 65893589}
+  - {fileID: 65893416}
   selectedCommands: []
   variables: []
   description: 
@@ -1929,7 +1931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 65893398}
   suppressBlockAutoSelect: 0
-  message: Read Journal 4
+  message: Read Journal 5
 --- !u!114 &65893393
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2074,7 +2076,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -2230.7222
-    y: -228.73297
+    y: -230.90689
     width: 100.43475
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2150,7 +2152,7 @@ MonoBehaviour:
     floatVal: 1
   _targetColor:
     colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
   waitUntilFinished: 1
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
@@ -2234,27 +2236,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 65893337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 537
+  itemId: 545
   indentLevel: 0
-  targetObjects:
-  - {fileID: 1398034129}
-  tweenType: 2
-  waitUntilFinished:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  duration:
+  spriteRenderer: {fileID: 204202216}
+  _duration:
     floatRef: {fileID: 0}
     floatVal: 1
-  fadeMode: 0
-  targetColor:
+  _targetColor:
     colorRef: {fileID: 0}
     colorVal: {r: 1, g: 1, b: 1, a: 1}
-  targetAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 0
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &65893406
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2324,7 +2320,12 @@ MonoBehaviour:
   itemId: 539
   indentLevel: 0
   targetObjects:
-  - {fileID: 1398034129}
+  - {fileID: 1139296259}
+  - {fileID: 2032626815}
+  - {fileID: 432537000}
+  - {fileID: 103498588}
+  - {fileID: 1575385666}
+  - {fileID: 900901456}
   tweenType: 2
   waitUntilFinished:
     booleanRef: {fileID: 0}
@@ -2338,7 +2339,7 @@ MonoBehaviour:
     colorVal: {r: 1, g: 1, b: 1, a: 1}
   targetAlpha:
     floatRef: {fileID: 0}
-    floatVal: 0.25
+    floatVal: 0
 --- !u!114 &65893409
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2485,7 +2486,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 404792837}
+    gameObjectVal: {fileID: 1398034129}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -2523,7 +2524,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -1354.482
-    y: -357.56848
+    y: -359.7424
     width: 201.30428
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2534,14 +2535,16 @@ MonoBehaviour:
   eventHandler: {fileID: 65893413}
   commandList:
   - {fileID: 65893415}
+  - {fileID: 65893599}
+  - {fileID: 65893600}
   - {fileID: 65893414}
-  - {fileID: 65893408}
   - {fileID: 65893402}
-  - {fileID: 65893401}
+  - {fileID: 65893405}
   - {fileID: 65893406}
   - {fileID: 65893407}
-  - {fileID: 65893405}
+  - {fileID: 65893408}
   - {fileID: 65893400}
+  - {fileID: 65893401}
   - {fileID: 65893595}
   suppressAllAutoSelections: 0
 --- !u!114 &65893417
@@ -2657,8 +2660,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -1357.0907
-    y: -401.0467
+    x: -1354.917
+    y: -398.8728
     width: 201.30428
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3323,7 +3326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -1794.2571
+    x: -1796.431
     y: -395.9991
     width: 142.17386
     height: 40
@@ -4859,7 +4862,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -1940.2188
-    y: -538.5016
+    y: -540.6755
     width: 145.65213
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6893,7 +6896,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 926287861}
+  setSayDialog: {fileID: 2031020957}
 --- !u!114 &65893596
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6924,8 +6927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 541
   indentLevel: 0
-  storyText: Shatter the glass that disguises the soul, without the weight you will
-    soar
+  storyText: Carve all the pieces of excess away, all that I want is your heart
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6952,7 +6954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -1506.866
+    x: -1504.692
     y: -391.6511
     width: 140.43474
     height: 40
@@ -6965,6 +6967,62 @@ MonoBehaviour:
   commandList:
   - {fileID: 65893597}
   suppressAllAutoSelections: 0
+--- !u!114 &65893599
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65893337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 543
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 404792837}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &65893600
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65893337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 544
+  indentLevel: 0
+  targetObjects:
+  - {fileID: 1139296259}
+  - {fileID: 2032626815}
+  - {fileID: 432537000}
+  - {fileID: 103498588}
+  - {fileID: 1575385666}
+  - {fileID: 900901456}
+  tweenType: 2
+  waitUntilFinished:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  fadeMode: 0
+  targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  targetAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 0.25
 --- !u!1 &81270377
 GameObject:
   m_ObjectHideFlags: 0
@@ -11728,7 +11786,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 50
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -11780,8 +11838,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.78700006}
-  m_AnchoredPosition: {x: 3, y: 14.130005}
-  m_SizeDelta: {x: -61, y: -63}
+  m_AnchoredPosition: {x: 0, y: 35.67801}
+  m_SizeDelta: {x: -61, y: 12.282837}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1895578027
 GameObject:
@@ -12067,7 +12125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2031020957
 MonoBehaviour:
   m_ObjectHideFlags: 0
