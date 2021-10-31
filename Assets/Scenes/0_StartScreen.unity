@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESOLUTION
+  m_text: Resolution
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b063c9a4c872ea14db6b8c98f72118d9, type: 2}
   m_sharedMaterial: {fileID: 2090047509916197269, guid: b063c9a4c872ea14db6b8c98f72118d9,
@@ -1130,7 +1130,7 @@ GameObject:
   - component: {fileID: 144000000}
   - component: {fileID: 143999999}
   m_Layer: 0
-  m_Name: DialogueInfo (TMP)
+  m_Name: ItemsInfo (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1174,7 +1174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click on items on the desk to interact with them. Click and drag items
+  m_text: Click the items on the desk to interact with them. Click and drag items
     to move them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b063c9a4c872ea14db6b8c98f72118d9, type: 2}
@@ -1955,6 +1955,7 @@ GameObject:
   - component: {fileID: 243720415}
   - component: {fileID: 243720416}
   - component: {fileID: 243720414}
+  - component: {fileID: 243720417}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2023,7 +2024,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 65.96907
     y: 63.746452
-    width: 109.34065
+    width: 109.78021
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2036,6 +2037,7 @@ MonoBehaviour:
   - {fileID: 243720413}
   - {fileID: 243720414}
   - {fileID: 243720412}
+  - {fileID: 243720417}
   - {fileID: 243720407}
   - {fileID: 243720416}
   suppressAllAutoSelections: 0
@@ -2063,7 +2065,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 243720409}
   selectedCommands: []
   variables: []
   description: 
@@ -2109,7 +2112,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 8c45cb3c7f13f1e4382d82b59f698aa5, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2219,6 +2222,24 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &243720417
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243720406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: fe1265c6f560c5343bf13e6b31da1838, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &262688094
 GameObject:
   m_ObjectHideFlags: 0
@@ -7415,7 +7436,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VOLUME
+  m_text: Volume
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b063c9a4c872ea14db6b8c98f72118d9, type: 2}
   m_sharedMaterial: {fileID: 2090047509916197269, guid: b063c9a4c872ea14db6b8c98f72118d9,
@@ -7923,8 +7944,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click on Journal to read the entries. Click on the bottom right corner
-    of the journal to close the journal, head to bed and start the next day.
+  m_text: Click on the journal text to read the current entry. Click on the bottom
+    right corner of the journal to close the journal, head to bed, and start the
+    next day.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b063c9a4c872ea14db6b8c98f72118d9, type: 2}
   m_sharedMaterial: {fileID: 2090047509916197269, guid: b063c9a4c872ea14db6b8c98f72118d9,
@@ -8214,7 +8236,7 @@ GameObject:
   - component: {fileID: 1314480820}
   - component: {fileID: 1314480819}
   m_Layer: 0
-  m_Name: ItemControls (TMP) (2)
+  m_Name: ItemControls (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9568,7 +9590,7 @@ GameObject:
   - component: {fileID: 1629335179}
   - component: {fileID: 1629335178}
   m_Layer: 0
-  m_Name: DialogueControls (TMP) (1)
+  m_Name: DialogueControls (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
